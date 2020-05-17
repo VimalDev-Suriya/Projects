@@ -1,0 +1,84 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    /* overflow: hidden; */
+    transition: 1s all linear;
+}
+.card{
+    border: 1px solid black;
+    padding: 20px;
+    /* color: white; */
+    z-index: 9999;
+    background-color: cornsilk;
+    /* opacity: 0.7; */
+}
+.card h4{
+    text-align: center;
+    text-transform: capitalize;
+}
+.car-pic{
+    background-image: url(/images/b1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size:cover;
+    transition: 1s linear;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+.car-color{
+    display: flex;
+    justify-content: center;
+}
+.car-color span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.black{
+    background-color: black;
+}
+.silver{
+    background-color: silver;
+}
+.red{
+    background-color: red;
+}
+.car-color .active::after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* box-sizing: border-box; */
+    /* right: 0; */
+}
+.car-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-info a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 45%;
+    padding: 15px;
+    transition: 0.5s ease-in;
+}
+.car-info a:hover{
+    transform: scale(1.05);
+}
